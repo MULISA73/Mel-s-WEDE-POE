@@ -9,17 +9,12 @@ The purpose of this project is to create an attractive and user-friendly website
 - Create a professional online presence for MEL CAKES.
 - Design a user-friendly website interface.
 - Display cake products and services.
-  
-**Technologies Used**
-The following technologies were used to develop this project:
-HTML5- Used to create the structure and content of the website.
-
-**Project Structure**
-<img width="1919" height="1079" alt="Screenshot 2026-08-16 214627" src="https://github.com/user-attachments/assets/7ba633bc-2df8-46e9-a300-0f55e59f8d8d" />
-
 
 **SITEMAP**
 <img width="2720" height="1880" alt="mels_cakes_site_map" src="https://github.com/user-attachments/assets/6e0cd225-2707-4a6e-9228-ede10c62b4cb" />
+
+**Project Structure**
+<img width="1919" height="1079" alt="Screenshot 2026-08-16 214627" src="https://github.com/user-attachments/assets/7ba633bc-2df8-46e9-a300-0f55e59f8d8d" />
 
 ## Changelog
 **PART 1**
