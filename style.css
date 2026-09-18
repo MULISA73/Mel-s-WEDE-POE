@@ -1,0 +1,907 @@
+/* Mel's Cakes & Treats - Part 2 external stylesheet */
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #3f2d35;
+    background-color: #fff7fa;
+    min-height: 100vh;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+a {
+    color: #7b2f52;
+}
+
+a:hover,
+a:focus {
+    color: #a64370;
+}
+
+/* Desktop sidebar navigation */
+nav {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: 15rem;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background-color: #6f2849;
+    box-shadow: 0.15rem 0 0.75rem rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    z-index: 10;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus,
+nav a.active {
+    color: #6f2849;
+    background-color: #ffe1ec;
+    transform: translateX(0.2rem);
+    outline: none;
+}
+
+main,
+body > section,
+body > h2,
+body > h3,
+body > p,
+body > img,
+body > address,
+body > form,
+body > footer {
+    margin-left: 15rem;
+}
+
+main {
+    padding: 2.5rem clamp(1.5rem, 4vw, 4rem);
+}
+
+body > section,
+body > footer {
+    padding: 2.5rem clamp(1.5rem, 4vw, 4rem);
+}
+
+/* Shared typography */
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #6f2849;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2.3rem, 5vw, 4.2rem);
+    letter-spacing: 0.02em;
+    margin-bottom: 0.6rem;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 1.2rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+    margin-top: 1.3rem;
+    margin-bottom: 0.55rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Home page */
+.hero {
+    min-height: 45vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(rgba(255, 225, 236, 0.88), rgba(255, 247, 250, 0.94));
+    border: 1px solid #f3c6d7;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(111, 40, 73, 0.1);
+}
+
+.tagline {
+    font-size: 1.15rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b2f52;
+}
+
+.intro {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.image-grid,
+.product-grid,
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.image-grid img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.button,
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    border: 0;
+    border-radius: 0.55rem;
+    padding: 0.8rem 1.15rem;
+    background-color: #6f2849;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover,
+.button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus {
+    background-color: #a64370;
+    color: #ffffff;
+    transform: translateY(-0.1rem);
+    outline: 0.18rem solid #f7b8cf;
+    outline-offset: 0.15rem;
+}
+
+/* About */
+.content-card {
+    max-width: 65rem;
+    margin: 0 auto 1.5rem;
+    padding: 1.6rem;
+    background-color: #ffffff;
+    border: 1px solid #f0ccd9;
+    border-radius: 0.85rem;
+    box-shadow: 0 0.3rem 0.9rem rgba(111, 40, 73, 0.08);
+}
+
+/* Products */
+.product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.product-card {
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #f0ccd9;
+    border-radius: 0.85rem;
+    box-shadow: 0 0.3rem 0.9rem rgba(111, 40, 73, 0.09);
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.product-card-content {
+    padding: 1.2rem;
+}
+
+.price {
+    font-weight: 700;
+    color: #7b2f52;
+}
+
+/* Forms */
+.form-section,
+.contact-section {
+    max-width: 70rem;
+    margin-left: 15rem;
+}
+
+form {
+    max-width: 45rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #f0ccd9;
+    border-radius: 0.85rem;
+    box-shadow: 0 0.3rem 0.9rem rgba(111, 40, 73, 0.08);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #c99aaf;
+    border-radius: 0.45rem;
+    background-color: #ffffff;
+    color: #3f2d35;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 8rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #7b2f52;
+    outline: 0.18rem solid #f7c6d8;
+    outline-offset: 0.08rem;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+address {
+    margin-top: 1.5rem;
+    font-style: normal;
+}
+
+.map-grid iframe {
+    width: 100%;
+    min-height: 18rem;
+    border: 0;
+    border-radius: 0.75rem;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: #f7d8e5;
+    text-align: center;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 64rem) {
+    nav {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    nav::before {
+        width: 100%;
+        margin-bottom: 0.35rem;
+        font-size: 1.3rem;
+    }
+
+    nav a:hover,
+    nav a:focus,
+    nav a.active {
+        transform: none;
+    }
+
+    main,
+    body > section,
+    body > h2,
+    body > h3,
+    body > p,
+    body > img,
+    body > address,
+    body > form,
+    body > footer,
+    .form-section,
+    .contact-section {
+        margin-left: 0;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 40rem) {
+    html {
+        font-size: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    main,
+    body > section,
+    body > footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 2.5rem 1rem;
+    }
+
+    .image-grid,
+    .product-grid,
+    .map-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions input {
+        width: 100%;
+    }
+}
+
+
+/* ==================================
+   PRODUCT PAGE
+================================== */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+}
+
+
+/* PRODUCT IMAGES */
+
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.product-card-content {
+    padding: 20px;
+}
+
+
+.product-card-content h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #7b2748;
+}
+
+
+.product-card-content p {
+    line-height: 1.6;
+}
+
+
+/* PRICE */
+
+.price {
+    color: #7b2748;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* ==================================
+   ORDER NOW BUTTON
+================================== */
+
+.order-icon {
+    display: inline-block;
+
+    background-color: #ff5ca8;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    margin-top: 5px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ORDER BUTTON HOVER */
+
+.order-icon:hover {
+    background-color: #7b2748;
+    color: white;
+}
+
+
+/* ==================================
+   RESPONSIVE DESIGN
+================================== */
+
+@media (max-width: 1000px) {
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================
+   MEL'S CAKES & TREATS - ORDER PAGE
+========================================= */
+
+
+/* GENERAL PAGE */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff7fa;
+    color: #333333;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: #7b2748;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 36px;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+    background-color: #5f1d38;
+    text-align: center;
+    padding: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ffb6d5;
+}
+
+
+/* Remove the default horizontal lines */
+
+hr {
+    display: none;
+}
+
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+main section > h2 {
+    text-align: center;
+    color: #7b2748;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+main section > p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555555;
+}
+
+
+/* =========================================
+   ORDER FORM
+========================================= */
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #f1c5d6;
+}
+
+
+/* =========================================
+   FIELDSETS
+========================================= */
+
+fieldset {
+    border: 2px solid #f3b5cd;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+legend {
+    color: #7b2748;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+label {
+    font-weight: bold;
+    color: #4d2535;
+}
+
+
+/* =========================================
+   TEXT INPUTS
+========================================= */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: white;
+}
+
+
+/* When user clicks inside an input */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff5ca8;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* =========================================
+   RADIO BUTTONS AND CHECKBOXES
+========================================= */
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #7b2748;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button {
+    background-color: #7b2748;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Button hover */
+
+button:hover {
+    background-color: #ff5ca8;
+}
+
+
+/* Reset button */
+
+button[type="reset"] {
+    background-color: #777777;
+}
+
+button[type="reset"]:hover {
+    background-color: #555555;
+}
+
+
+/* =========================================
+   HELP SECTION
+========================================= */
+
+body > section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+
+    background-color: #ffe5ef;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+body > section h2 {
+    color: #7b2748;
+    font-family: Georgia, serif;
+}
+
+body > section a {
+    display: inline-block;
+
+    background-color: #7b2748;
+    color: white;
+
+    padding: 10px 20px;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+body > section a:hover {
+    background-color: #ff5ca8;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #7b2748;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 12px 0;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    main section > h2 {
+        font-size: 30px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background-color: #681a38;
+    color: white;
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+
+/* Logo and business name */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Logo */
+.logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* Remove unwanted link styling around logo */
+.logo-link {
+    padding: 0;
+    background: none;
+}
+
+/* Business name */
+.header h1 {
+    color: white;
+    font-size: 28px;
+    margin: 0;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #8b294d;
+}
+
+nav a.active {
+    background-color: #ffdce8;
+    color: #681a38;
+}
