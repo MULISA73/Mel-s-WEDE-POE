@@ -1,144 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Enquiry</title>
-    </head>
-    <body>
-        <body bgcolor="lightpink">
-         <nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a quotation from Mel's Cakes & Treats for your next special occasion.">
+    <title>Mel's Cakes & Treats | Enquiry</title>
+    <div class="header-top">
 
-    <a href="INDEX.html">Home</a>
-    <a href="About.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="enquiry.html">Enquiry</a>
-    <a href="contact.html">Contact</a>
+        <!-- Logo -->
+        <a href="INDEX.html" class="logo-link">
+            <img src="Images/ChatGPT Image Sep 18, 2026, 01_49_19 AM.png"
+                 alt="Mel's Cakes & Treats Logo"
+                 class="logo">
+        </a>
 
-</nav>
-<section id="order">
+        <!-- Business Name -->
+        <h1>Mel's Cakes & Treats</h1>
 
-    <h2>Request a Quote</h2>
+    </div>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <a href="INDEX.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Products.html">Products</a>
+        <a href="order.html">Order</a>
+        <a class="active" href="Enquiry.html">Enquiry</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
 
-    <p>
-        Complete the form below to request a quotation.
-    </p>
+    <main>
+        <section class="form-section" id="order">
+            <h1>Request a Enquiry</h1>
+            <p>Complete the form below to complete your enquiry.</p>
 
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-    <form>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
 
-        <label for="name">
-            Full Name:
-        </label>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-        <br>
+                <div class="form-group">
+                    <label for="message">Additional Requirements</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
 
-        <input type="text"
-               id="name"
-               name="name"
-               required>
+                <div class="form-actions">
+                    <input type="submit" value="Submit Enquiry Request">
+                    <input type="reset" value="Clear Form">
+                </div>
+            </form>
+        </section>
+    </main>
 
-        <br><br>
-
-
-        <label for="phone">
-            Phone Number:
-        </label>
-
-        <br>
-
-        <input type="tel"
-               id="phone"
-               name="phone"
-               required>
-
-        <br><br>
-
-
-        <label for="email">
-            Email Address:
-        </label>
-
-        <br>
-
-        <input type="email"
-               id="email"
-               name="email"
-               required>
-
-        <br><br>
-
-
-        <label for="date">
-            Event Date:
-        </label>
-
-        <br>
-
-        <input type="date"
-               id="date"
-               name="date">
-
-        <br><br>
-
-
-        <label for="product">
-            Product Required:
-        </label>
-
-        <br>
-
-        <select id="product"
-                name="product">
-
-            <option>Custom Cake</option>
-            <option>Wedding Cake</option>
-            <option>Cupcakes</option>
-            <option>Cookies</option>
-            <option>Dessert Box</option>
-
-        </select>
-
-        <br><br>
-
-
-        <label for="flavour">
-            Preferred Flavour:
-        </label>
-
-        <br>
-
-        <select id="flavour"
-                name="flavour">
-
-            <option>Chocolate</option>
-            <option>Vanilla</option>
-            <option>Red Velvet</option>
-            <option>Carrot</option>
-            <option>Lemon</option>
-
-        </select>
-
-        <br><br>
-
-
-        <label for="message">
-            Additional Requirements:
-        </label>
-
-        <br>
-
-        <textarea id="message"
-                  name="message"
-                  rows="6"
-                  cols="40"></textarea>
-
-        <br><br>
-
-
-        <input type="submit"
-               value="Submit Quote Request">
-
-    </form>
-
-</section>
-
-    </body>
+    <footer>
+        <p>&copy; 2026 Mel's Cakes &amp; Treats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

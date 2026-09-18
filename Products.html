@@ -1,88 +1,291 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Products</title>
-    </head>
-    <body>
-    <body bgcolor="lightpink">
-           <nav>
+<html lang="en">
 
-    <a href="INDEX.html">Home</a>
-    <a href="About.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="enquiry.html">Enquiry</a>
-    <a href="contact.html">Contact</a>
+<head>
+    <meta charset="UTF-8">
 
-</nav>
- <h2>Our Products</h2>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <h3>Custom Cakes</h3>
+    <meta name="description"
+          content="Browse custom cakes, cupcakes, cookies, dessert boxes and wedding cakes from Mel's Cakes & Treats.">
 
-    <p>
-        Personalised cakes designed for your
-        special occasion.
-    </p>
+    <title>Mel's Cakes & Treats | Products</title>
+    <div class="header-top">
 
-    <p>Price: From R350</p>
-    <img src="images/Wedding cake.jpg"
-     alt="Birthday Cake"
-     width="300">
+        <!-- Logo -->
+        <a href="INDEX.html" class="logo-link">
+            <img src="Images/ChatGPT Image Sep 18, 2026, 01_49_19 AM.png"
+                 alt="Mel's Cakes & Treats Logo"
+                 class="logo">
+        </a>
 
+        <!-- Business Name -->
+        <h1>Mel's Cakes & Treats</h1>
 
-    <h3>Cupcakes</h3>
-
-    <p>
-        Beautiful cupcakes available in different
-        flavours and designs.
-    </p>
-
-    <p>Price: From R120</p>
-    <img src="images/Cupcake.jpg"
-     alt="Cupcake"
-     width="300">
+    </div>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 
-    <h3>Cookies</h3>
+<body>
 
-    <p>
-        Freshly baked cookies for parties,
-        gifts and everyday treats.
-    </p>
+    <!-- =========================
+         SIDE NAVIGATION
+    ========================== -->
 
-    <p>Price: From R80</p>
-    <img src="images/Cookies.jpg"
-     alt="Cookies"
-     width="300">
+    <nav aria-label="Main navigation">
+        <a href="INDEX.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a class="active" href="Products.html">Products</a>
+        <a href="order.html">Order</a>
+        <a href="Enquiry.html">Enquiry</a>
+        <a href="Contact.html">Contact</a>
 
-
-    <h3>Dessert Boxes</h3>
-
-    <p>
-        A selection of delicious treats packaged
-        for sharing or gifting.
-    </p>
-
-    <p>Price: From R180</p>
-    <img src="images/christmas-dessert-box-ideas.jpg"
-     alt="Dessert Boxes"
-     width="300">
+    </nav>
 
 
-    <h3>Wedding Cakes</h3>
 
-    <p>
-        Elegant custom wedding cakes created
-        according to your theme.
-    </p>
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
 
-    <p>Price: Custom Quote</p>
-    <img src="images/wedding cke 3.jpg"
-     alt="Wedding cake"
-     width="300">
-     <img src="images/wedding cake 2.jpg"
-     alt="Wedding cake"
-     width="300">
+    <main>
 
-</section>
+        <section>
 
-    </body>
+            <h1>Our Products</h1>
+
+            <p>
+                Choose from our selection of freshly prepared treats,
+                or request a customised order for your event.
+            </p>
+
+
+            <!-- PRODUCT GRID -->
+
+            <div class="product-grid">
+
+
+                <!-- =====================
+                     CUSTOM CAKES
+                ====================== -->
+
+                <article class="product-card">
+
+                    <img src="Images/Wedding cake.jpg"
+                         alt="Decorated custom celebration cake">
+
+                    <div class="product-card-content">
+
+                        <h2>Custom Cakes</h2>
+
+                        <p>
+                            Personalised cakes designed for birthdays
+                            and other special occasions.
+                        </p>
+
+                        <p class="price">
+                            From R350
+                        </p>
+
+                        <a href="order.html"
+                           class="order-icon">
+                         Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =====================
+                     CUPCAKES
+                ====================== -->
+
+                <article class="product-card">
+
+                    <img src="Images/Cupcake.jpg"
+                         alt="Decorated cupcakes">
+
+                    <div class="product-card-content">
+
+                        <h2>Cupcakes</h2>
+
+                        <p>
+                            Beautiful cupcakes available in different
+                            flavours and designs.
+                        </p>
+
+                        <p class="price">
+                            From R120
+                        </p>
+
+                        <a href="order.html"
+                           class="order-icon">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =====================
+                     COOKIES
+                ====================== -->
+
+                <article class="product-card">
+
+                    <img src="Images/Cookies.jpg"
+                         alt="Freshly baked cookies">
+
+                    <div class="product-card-content">
+
+                        <h2>Cookies</h2>
+
+                        <p>
+                            Freshly baked cookies for parties,
+                            gifts and everyday treats.
+                        </p>
+
+                        <p class="price">
+                            From R80
+                        </p>
+
+                        <a href="order.html"
+                           class="order-icon">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =====================
+                     DESSERT BOXES
+                ====================== -->
+
+                <article class="product-card">
+
+                    <img src="Images/christmas-dessert-box-ideas.jpg"
+                         alt="Assorted dessert gift box">
+
+                    <div class="product-card-content">
+
+                        <h2>Dessert Boxes</h2>
+
+                        <p>
+                            A selection of delicious treats packaged
+                            for sharing or gifting.
+                        </p>
+
+                        <p class="price">
+                            From R180
+                        </p>
+
+                        <a href="order.html"
+                           class="order-icon">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =====================
+                     WEDDING CAKES
+                ====================== -->
+
+                <article class="product-card">
+
+                    <img src="Images/wedding cke 3.jpg"
+                         alt="Elegant tiered wedding cake">
+
+                    <div class="product-card-content">
+
+                        <h2>Wedding Cakes</h2>
+
+                        <p>
+                            Elegant custom wedding cakes created
+                            according to your theme and requirements.
+                        </p>
+
+                        <p class="price">
+                            Custom Quote
+                        </p>
+
+                        <a href="order.html"
+                           class="order-icon">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =====================
+                     WEDDING CAKE DESIGNS
+                ====================== -->
+
+                <article class="product-card">
+
+                    <img src="Images/wedding cake 2.jpg"
+                         alt="Decorative wedding cake design">
+
+                    <div class="product-card-content">
+
+                        <h2>Wedding Cake Designs</h2>
+
+                        <p>
+                            Additional wedding cake styles can be
+                            customised to suit your celebration.
+                        </p>
+
+                        <p class="price">
+                            Custom Quote
+                        </p>
+
+                        <a href="order.html"
+                           class="order-icon">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Mel's Cakes &amp; Treats.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

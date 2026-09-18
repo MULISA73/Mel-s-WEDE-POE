@@ -1,170 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Contact</title>
-    </head>
-    <body>
-    <body bgcolor="lightpink">
-            <nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Mel's Cakes & Treats for questions and custom cake enquiries.">
+    <title>Mel's Cakes & Treats | Contact</title>
+    <div class="header-top">
 
-    <a href="INDEX.html">Home</a>
-    <a href="About.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="enquiry.html">Enquiry</a>
-    <a href="contact.html">Contact</a>
-
-</nav>
-<section id="contact">
-
-    <h2>Contact Us</h2>
-
-    <p>
-        Have a question or want to discuss a custom order?
-        Contact Mel's Cakes & Treats.
-    </p>
-<form>
-
-
-    <label for="name">
-        Full Name:
-    </label>
-
-    <br>
-
-    <input type="text" 
-           id="name" 
-           name="name"
-           placeholder="Enter your name"
-           required>
-
-    <br><br>
-
-
-
-    <label for="email">
-        Email Address:
-    </label>
-
-    <br>
-
-    <input type="email" 
-           id="email" 
-           name="email"
-           placeholder="Enter your email"
-           required>
-
-    <br><br>
-
-
-
-    <label for="phone">
-        Phone Number:
-    </label>
-
-    <br>
-
-    <input type="tel" 
-           id="phone" 
-           name="phone"
-           placeholder="Enter your phone number">
-
-    <br><br>
-
-
-
-    <label for="subject">
-        Subject:
-    </label>
-
-    <br>
-
-    <input type="text"
-           id="subject"
-           name="subject"
-           placeholder="What is your enquiry about?">
-
-    <br><br>
-
-
-
-    <label for="message">
-        Message:
-    </label>
-
-    <br>
-
-    <textarea id="message"
-              name="message"
-              rows="6"
-              cols="40"
-              placeholder="Write your message here">
-    </textarea>
-
-    <br><br>
-
-
-
-    <input type="submit"
-           value="Send Message">
-
-
-    <input type="reset"
-           value="Clear Form">
-
-
-</form>
-
-    <address>
-
-        <p>
-            <strong>Phone:</strong>
-            071 234 5678
-        </p>
-
-        <p>
-            <strong>Email:</strong>
-            info@melscakes.co.za
-        </p>
-
-        <p>
-            <strong>Business Hours:</strong>
-            Monday - Saturday, 08:00 - 17:00
-        </p>
-
-    </address>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7150.474981084033!2d28.09838892973015!3d-26.3511795475763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9504aee69f1e83%3A0x4ddb7201b546d2d6!2s26%20Cairo%20St%2C%20Southdowns%2C%20Alberton%2C%201454!5e0!3m2!1sen!2sza!4v1786897249871!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.023803631428!2d28.09651497521625!3d-26.358092076982114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95059b254ea747%3A0x5660828a20bfdb17!2sLeopards%20Rest%20Security%20Estate!5e0!3m2!1sen!2sza!4v1786906977239!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
-    <p>
-
-        <a href="https://wa.me/27712345678">
-            Contact us on WhatsApp
+        <!-- Logo -->
+        <a href="INDEX.html" class="logo-link">
+            <img src="Images/ChatGPT Image Sep 18, 2026, 01_49_19 AM.png"
+                 alt="Mel's Cakes & Treats Logo"
+                 class="logo">
         </a>
 
-    </p>
+        <!-- Business Name -->
+        <h1>Mel's Cakes & Treats</h1>
 
-</section>
+    </div>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <a href="INDEX.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Products.html">Products</a>
+        <a href="order.html">Order</a>
+        <a href="Enquiry.html">Enquiry</a>
+        <a class="active" href="Contact.html">Contact</a>
+    </nav>
 
+    <main>
+        <section class="contact-section" id="contact">
+            <h1>Contact Us</h1>
+            <p>Have a question or want to discuss a custom order? Contact Mel's Cakes &amp; Treats.</p>
 
-</main>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
 
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
 
-<!-- FOOTER -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
 
-<footer>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is your enquiry about?">
+                </div>
 
-    <h3>Mel's Cakes & Treats</h3>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+                </div>
 
-    <p>
-        Freshly baked. Beautifully designed.
-        Made with love.
-    </p>
+                <div class="form-actions">
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Clear Form">
+                </div>
+            </form>
 
-    <p>
-        &copy; 2026 Mel's Cakes & Treats.
-        All rights reserved.
-    </p>
+            <address>
+                <p><strong>Phone:</strong> 071 234 5678</p>
+                <p><strong>Email:</strong> info@melscakes.co.za</p>
+                <p><strong>Business Hours:</strong> Monday - Saturday, 08:00 - 17:00</p>
+            </address>
 
-</footer>
-    </body>
-</html>  
+            <div class="map-grid">
+                <iframe title="Map showing Southdowns, Alberton" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7150.474981084033!2d28.09838892973015!3d-26.3511795475763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9504aee69f1e83%3A0x4ddb7201b546d2d6!2s26%20Cairo%20St%2C%20Southdowns%2C%20Alberton%2C%201454!5e0!3m2!1sen!2sza!4v1786897249871!5m2!1sen!2sza" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe title="Map showing Leopards Rest Security Estate" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.023803631428!2d28.09651497521625!3d-26.358092076982114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95059b254ea747%3A0x5660828a20bfdb17!2sLeopards%20Rest%20Security%20Estate!5e0!3m2!1sen!2sza!4v1786906977239!5m2!1sen!2sza" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <p><a class="button" href="https://wa.me/27712345678">Contact us on WhatsApp</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mel's Cakes &amp; Treats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

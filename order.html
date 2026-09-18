@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mel's Cakes & Treats creates custom cakes, cupcakes, cookies and dessert boxes for special occasions.">
+    <title>Mel's Cakes & Treats | Home</title>
+    <div class="header-top">
+
+        <!-- Logo -->
+        <a href="INDEX.html" class="logo-link">
+            <img src="Images/ChatGPT Image Sep 18, 2026, 01_49_19 AM.png"
+                 alt="Mel's Cakes & Treats Logo"
+                 class="logo">
+        </a>
+
+        <!-- Business Name -->
+        <h1>Mel's Cakes & Treats</h1>
+
+    </div>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <a href="INDEX.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Products.html">Products</a>
+        <a class="nav-link" href="order.html">Order</a>
+        <a href="Enquiry.html">Enquiry</a>
+        <a href="Contact.html">Contact</a>
+
+    </nav>
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        <section>
+
+            <h2>Place Your Order</h2>
+
+            <p>
+                Complete the form below to order your favourite
+                cakes and treats from Mel's Cakes &amp; Treats.
+            </p>
+
+
+            <!-- =========================
+                 ORDER FORM
+            ========================== -->
+
+            <form action="#" method="post">
+
+
+                <!-- CUSTOMER DETAILS -->
+
+                <fieldset>
+
+                    <legend>
+                        <strong>Customer Details</strong>
+                    </legend>
+
+                    <br>
+
+
+                    <label for="fullname">
+                        Full Name:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        required>
+
+                    <br><br>
+
+
+                    <label for="email">
+                        Email Address:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+
+                    <br><br>
+
+
+                    <label for="phone">
+                        Phone Number:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="e.g. 071 234 5678"
+                        required>
+
+                    <br><br>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <!-- PRODUCT DETAILS -->
+
+                <fieldset>
+
+                    <legend>
+                        <strong>Order Details</strong>
+                    </legend>
+
+                    <br>
+
+
+                    <label for="product">
+                        Select Product:
+                    </label>
+
+                    <br>
+
+                    <select
+                        id="product"
+                        name="product"
+                        required>
+
+                        <option value="">
+                            -- Select a Product --
+                        </option>
+
+                        <option value="custom-cake">
+                            Custom Cake - From R350
+                        </option>
+
+                        <option value="cupcakes">
+                            Cupcakes - From R120
+                        </option>
+
+                        <option value="cookies">
+                            Cookies - From R80
+                        </option>
+
+                        <option value="dessert-box">
+                            Dessert Box - From R180
+                        </option>
+
+                        <option value="wedding-cake">
+                            Wedding Cake - Custom Quote
+                        </option>
+
+                        <option value="wedding-design">
+                            Wedding Cake Design - Custom Quote
+                        </option>
+
+                    </select>
+
+
+                    <br><br>
+
+
+                    <label for="quantity">
+                        Quantity:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="1"
+                        value="1"
+                        required>
+
+
+                    <br><br>
+
+
+                    <label for="flavour">
+                        Select Flavour:
+                    </label>
+
+                    <br>
+
+                    <select
+                        id="flavour"
+                        name="flavour">
+
+                        <option value="">
+                            -- Select a Flavour --
+                        </option>
+
+                        <option value="vanilla">
+                            Vanilla
+                        </option>
+
+                        <option value="chocolate">
+                            Chocolate
+                        </option>
+
+                        <option value="red-velvet">
+                            Red Velvet
+                        </option>
+
+                        <option value="carrot">
+                            Carrot Cake
+                        </option>
+
+                        <option value="lemon">
+                            Lemon
+                        </option>
+
+                    </select>
+
+
+                    <br><br>
+
+
+                    <label for="size">
+                        Cake Size:
+                    </label>
+
+                    <br>
+
+                    <select
+                        id="size"
+                        name="size">
+
+                        <option value="">
+                            -- Select a Size --
+                        </option>
+
+                        <option value="small">
+                            Small
+                        </option>
+
+                        <option value="medium">
+                            Medium
+                        </option>
+
+                        <option value="large">
+                            Large
+                        </option>
+
+                        <option value="custom">
+                            Custom Size
+                        </option>
+
+                    </select>
+
+
+                    <br><br>
+
+
+                    <label for="cake-message">
+                        Message on Cake:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="cake-message"
+                        name="cake-message"
+                        placeholder="e.g. Happy Birthday Mel">
+
+
+                    <br><br>
+
+
+                    <label for="instructions">
+                        Special Instructions:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="instructions"
+                        name="instructions"
+                        rows="5"
+                        cols="40"
+                        placeholder="Describe colours, decorations, theme or other requirements"></textarea>
+
+                    <br><br>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <!-- COLLECTION / DELIVERY -->
+
+                <fieldset>
+
+                    <legend>
+                        <strong>Collection or Delivery</strong>
+                    </legend>
+
+                    <br>
+
+
+                    <p>
+                        How would you like to receive your order?
+                    </p>
+
+
+                    <input
+                        type="radio"
+                        id="collection"
+                        name="delivery-method"
+                        value="collection"
+                        required>
+
+                    <label for="collection">
+                        Collection
+                    </label>
+
+
+                    <br>
+
+
+                    <input
+                        type="radio"
+                        id="delivery"
+                        name="delivery-method"
+                        value="delivery">
+
+                    <label for="delivery">
+                        Delivery
+                    </label>
+
+
+                    <br><br>
+
+
+                    <label for="address">
+                        Delivery Address:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="4"
+                        cols="40"
+                        placeholder="Only complete this if you selected delivery"></textarea>
+
+
+                    <br><br>
+
+
+                    <label for="order-date">
+                        Required Date:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="date"
+                        id="order-date"
+                        name="order-date"
+                        required>
+
+
+                    <br><br>
+
+
+                    <label for="order-time">
+                        Preferred Time:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="time"
+                        id="order-time"
+                        name="order-time">
+
+
+                    <br><br>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <!-- PAYMENT -->
+
+                <fieldset>
+
+                    <legend>
+                        <strong>Payment Method</strong>
+                    </legend>
+
+                    <br>
+
+
+                    <input
+                        type="radio"
+                        id="cash"
+                        name="payment"
+                        value="cash"
+                        required>
+
+                    <label for="cash">
+                        Cash
+                    </label>
+
+
+                    <br>
+
+
+                    <input
+                        type="radio"
+                        id="eft"
+                        name="payment"
+                        value="eft">
+
+                    <label for="eft">
+                        EFT / Bank Transfer
+                    </label>
+
+
+                    <br>
+
+
+                    <input
+                        type="radio"
+                        id="card"
+                        name="payment"
+                        value="card">
+
+                    <label for="card">
+                        Card
+                    </label>
+
+
+                    <br><br>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <!-- TERMS -->
+
+                <input
+                    type="checkbox"
+                    id="confirm"
+                    name="confirm"
+                    required>
+
+                <label for="confirm">
+                    I confirm that the information provided
+                    in this order is correct.
+                </label>
+
+
+                <br><br>
+
+
+                <!-- BUTTONS -->
+
+                <button type="submit">
+                    Place Order
+                </button>
+
+                &nbsp;
+
+                <button type="reset">
+                    Clear Form
+                </button>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <br>
+
+    <hr>
+
+
+    
+        <!--CONTACT INFORMATION-->
+
+
+    <section>
+
+        <h2>Need Help With Your Order?</h2>
+
+        <p>
+            Contact Mel's Cakes &amp; Treats if you need assistance
+            with a customised cake or special order.
+        </p>
+
+        <p>
+            <a href="Contact.html">
+                Contact Us
+            </a>
+        </p>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Mel's Cakes &amp; Treats.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
