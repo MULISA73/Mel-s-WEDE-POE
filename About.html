@@ -4,35 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn about the story, mission and vision of Mel's Cakes & Treats.">
-    <title>Mel's Cakes & Treats | About Us</title>
-    <div class="header-top">
-
-        <!-- Logo -->
-        <a href="INDEX.html" class="logo-link">
-            <img src="Images/ChatGPT Image Sep 18, 2026, 01_49_19 AM.png"
-                 alt="Mel's Cakes & Treats Logo"
-                 class="logo">
-        </a>
-
-        <!-- Business Name -->
-        <h1>Mel's Cakes & Treats</h1>
-
-    </div>
-    <link rel="stylesheet" href="css/style.css">
+    <title>About Us | Mel's Cakes & Treats</title>
+<meta name="description" content="Learn more about Mel's Cakes & Treats, our passion for baking, our mission and our commitment to creating delicious treats for special occasions.">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/js" defer></script>
 </head>
 <body>
-    <nav aria-label="Main navigation">
-        <a href="INDEX.html">Home</a>
-        <a class="active" href="About.html">About Us</a>
-        <a href="Products.html">Products</a>
-        <a href="order.html">Order</a>
-        <a href="Enquiry.html">Enquiry</a>
-        <a href="Contact.html">Contact</a>
-    </nav>
+    <button class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mainNavigation">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<nav id="mainNavigation" aria-label="Main navigation">
+    <a class="active" href="INDEX.html">Home</a>
+    <a href="About.html">About Us</a>
+    <a href="Products.html">Products</a>
+    <a href="Enquiry.html">Enquiry</a>
+    <a href="Contact.html">Contact</a>
+</nav>
 
     <main>
         <section class="content-card">
-            <h1>About Us</h1>
+            <h1>About Mel's Cakes &amp; Treats</h1>
             <p>
                 Mel's Cakes &amp; Treats is a small, locally owned baking business founded by Mel,
                 an entrepreneur with a passion for baking, creativity and creating memorable experiences
@@ -73,6 +71,54 @@
                 stronger relationships within the community.
             </p>
         </section>
+        
+<section class="content-card faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <p>Find answers to some of our customers' common questions.</p>
+
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            Do you accept custom cake orders?
+            <span>+</span>
+        </button>
+        <div class="faq-answer" hidden>
+            <p>Yes! We offer customised cakes designed according to your preferred theme, colours and occasion. Contact us to discuss your ideas.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            How far in advance should I place an order?
+            <span>+</span>
+        </button>
+        <div class="faq-answer" hidden>
+            <p>We recommend contacting us as early as possible so that we can discuss your requirements and confirm availability.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            Do you offer delivery?
+            <span>+</span>
+        </button>
+        <div class="faq-answer" hidden>
+            <p>Please contact us to confirm delivery availability and arrangements for your order.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            Can I request a specific cake design?
+            <span>+</span>
+        </button>
+        <div class="faq-answer" hidden>
+            <p>Absolutely! You can share your preferred design, colours and inspiration when making an enquiry.</p>
+        </div>
+    </div>
+
+</section>
+
     </main>
 
     <footer>

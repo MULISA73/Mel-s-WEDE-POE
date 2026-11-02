@@ -3,39 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Request a quotation from Mel's Cakes & Treats for your next special occasion.">
-    <title>Mel's Cakes & Treats | Enquiry</title>
-    <div class="header-top">
+    <meta name="description" content="Have a special cake or dessert in mind? Send an enquiry to Mel's Cakes & Treats about custom orders and your requirements.">
+    <title>Make an Enquiry | Mel's Cakes & Treats</title>
 
-        <!-- Logo -->
-        <a href="INDEX.html" class="logo-link">
-            <img src="Images/ChatGPT Image Sep 18, 2026, 01_49_19 AM.png"
-                 alt="Mel's Cakes & Treats Logo"
-                 class="logo">
-        </a>
-
-        <!-- Business Name -->
-        <h1>Mel's Cakes & Treats</h1>
-
-    </div>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css"
+    <script src="js/js" defer></script>
 </head>
 <body>
-    <nav aria-label="Main navigation">
-        <a href="INDEX.html">Home</a>
-        <a href="About.html">About Us</a>
-        <a href="Products.html">Products</a>
-        <a href="order.html">Order</a>
-        <a class="active" href="Enquiry.html">Enquiry</a>
-        <a href="Contact.html">Contact</a>
-    </nav>
+ <button class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mainNavigation">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
 
+<nav id="mainNavigation" aria-label="Main navigation">
+    <a class="active" href="INDEX.html">Home</a>
+    <a href="About.html">About Us</a>
+    <a href="Products.html">Products</a>
+    <a href="Enquiry.html">Enquiry</a>
+    <a href="Contact.html">Contact</a>
+</nav>
     <main>
         <section class="form-section" id="order">
-            <h1>Request a Enquiry</h1>
-            <p>Complete the form below to complete your enquiry.</p>
+            <h1>Request a Quote for Cakes and Treats</h1>
+            <p>Complete the form below to request a quotation for your order.</p>
 
-            <form action="#" method="post">
+            <form id="enquiryForm"
+      action="https://formspree.io/f/mqppgwpp"
+      method="POST">
                 <div class="form-group">
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" required>
@@ -43,7 +42,7 @@
 
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
+                   <input type="tel" id="phone" name="phone" pattern="[+]?[0-9\s()-]{10,16}" title="Enter a valid phone number using 10 to 16 characters." required>
                 </div>
 
                 <div class="form-group">
@@ -52,15 +51,43 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="date">Event Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Product Required</label>
+                    <select id="product" name="product">
+                        <option value="custom-cake">Custom Cake</option>
+                        <option value="wedding-cake">Wedding Cake</option>
+                        <option value="cupcakes">Cupcakes</option>
+                        <option value="cookies">Cookies</option>
+                        <option value="dessert-box">Dessert Box</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="flavour">Preferred Flavour</label>
+                    <select id="flavour" name="flavour">
+                        <option value="chocolate">Chocolate</option>
+                        <option value="vanilla">Vanilla</option>
+                        <option value="red-velvet">Red Velvet</option>
+                        <option value="carrot">Carrot</option>
+                        <option value="lemon">Lemon</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
                     <label for="message">Additional Requirements</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" placeholder="Tell us about your theme, colours, quantity or other requirements."></textarea>
                 </div>
 
                 <div class="form-actions">
-                    <input type="submit" value="Submit Enquiry Request">
+                    <input type="submit" value="Submit Quote Request">
                     <input type="reset" value="Clear Form">
                 </div>
             </form>
+         <p id="formMessage" role="status" aria-live="polite"></p>   
         </section>
     </main>
 
