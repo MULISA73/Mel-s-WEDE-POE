@@ -417,6 +417,8 @@ The project demonstrates the application of HTML5, CSS3 and JavaScript in develo
 **Main Technologies:** HTML5, CSS3 and JavaScript
 
 
+##DEPLOYMENT OF THE WEBSITE
 
+melscakesandtreats.netlify.app 
 
 
